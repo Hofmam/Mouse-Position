@@ -1,0 +1,10 @@
+import pyautogui
+import keyboard
+x = True
+print('aperte CTRL+ENTER para salvar a posição do mouse\napós coloque um nome para a posição e de ENTER')
+while x:
+  keyboard.wait('ctrl+enter')
+  print(pyautogui.position())
+  input_user = input()
+  if input_user == 'fim':
+    x = False
